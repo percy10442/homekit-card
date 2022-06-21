@@ -1,0 +1,2486 @@
+popup_cards:
+  switch.sonoff_10015da991:
+    title: ' '
+    card:
+      type: vertical-stack
+      cards:
+        - type: custom:mini-graph-card
+          name: W
+          hours_to_show: 168
+          icon: sensor.sonoff_10015da991_power
+          line_color: blue
+          entities:
+            - entity: sensor.sonoff_10015da991_power
+        - type: custom:mini-graph-card
+          name: Wh
+          hours_to_show: 168
+          icon: sensor.sonoff_10015da991_power
+          entities:
+            - entity: sensor.sonoff_10015da991_energy
+          show:
+            graph: bar
+  switch.sonoff_10015d9288:
+    title: ' '
+    card:
+      type: vertical-stack
+      cards:
+        - type: custom:mini-graph-card
+          name: W
+          hours_to_show: 168
+          icon: sensor.sonoff_10015d9288_power
+          line_color: blue
+          entities:
+            - entity: sensor.sonoff_10015d9288_power
+        - type: custom:mini-graph-card
+          name: Wh
+          hours_to_show: 168
+          icon: sensor.sonoff_10015d9288_power
+          entities:
+            - entity: sensor.sonoff_10015d9288_energy
+          show:
+            graph: bar
+  weather.pchome:
+    title: ' '
+    card:
+      type: custom:weather-card
+      entity: weather.pchome
+      number_of_forecasts: '5'
+      current: true
+      details: true
+      forecast: true
+      hourly_forecast: false
+  media_player.ke_ting_2:
+    title: ' '
+    card:
+      type: entities
+      entities:
+        - entity: input_text.broadcast
+          type: custom:text-input-row
+        - type: call-service
+          name: ' '
+          icon: mdi:voice
+          action_name: Announce It...
+          service: script.broadcast_living_room
+  media_player.zhu_wo:
+    title: ' '
+    card:
+      type: entities
+      entities:
+        - entity: input_text.broadcast
+          type: custom:text-input-row
+        - type: call-service
+          name: ' '
+          icon: mdi:voice
+          action_name: Announce It...
+          service: script.broadcast_main_room
+  media_player.can_ting:
+    title: ' '
+    card:
+      type: entities
+      entities:
+        - entity: input_text.broadcast
+          type: custom:text-input-row
+        - type: call-service
+          name: ' '
+          icon: mdi:voice
+          action_name: Announce It...
+          service: script.broadcast_restaurant
+  cover.ke_ting_juan_lian:
+    title: ' '
+    card:
+      type: custom:mushroom-cover-card
+      entity: cover.ke_ting_juan_lian
+      show_position_control: true
+      show_buttons_control: true
+      layout: vertical
+      tap_action:
+        action: toggle
+  cover.0x158d00079813f6_motor:
+    title: ' '
+    card:
+      type: custom:mushroom-cover-card
+      entity: cover.0x158d00079813f6_motor
+      show_position_control: true
+      show_buttons_control: true
+      layout: vertical
+      tap_action:
+        action: toggle
+  cover.lumi_hmcn02_35c3_curtain:
+    title: ' '
+    card:
+      type: custom:mushroom-cover-card
+      entity: cover.lumi_hmcn02_35c3_curtain
+      show_position_control: true
+      show_buttons_control: true
+      layout: vertical
+      tap_action:
+        action: toggle
+      name: 書房窗簾
+  switch.0x54ef44100018235f_channel_1:
+    title: ' '
+    card:
+      type: custom:mushroom-light-card
+      entity: light.yeelight_ct_bulb_0x0000000007d51536
+      hide_state: false
+      fill_container: false
+      use_light_color: true
+      show_brightness_control: true
+      show_color_temp_control: true
+      show_color_control: false
+      collapsible_controls: false
+      layout: vertical
+  switch.0x54ef44100018235f_channel_2:
+    title: ' '
+    card:
+      type: custom:mushroom-light-card
+      entity: light.yeelight_ct_bulb_0x0000000007c210d4
+      hide_state: false
+      fill_container: false
+      use_light_color: true
+      show_brightness_control: true
+      show_color_temp_control: true
+      show_color_control: false
+      collapsible_controls: false
+      layout: vertical
+  switch.0x54ef44100001154b_channel_3:
+    title: ' '
+    card:
+      type: custom:mushroom-light-card
+      entity: light.fen_zi_deng_2
+      hide_state: false
+      fill_container: false
+      use_light_color: true
+      show_brightness_control: true
+      show_color_temp_control: true
+      show_color_control: false
+      collapsible_controls: false
+      layout: vertical
+  light.yeelight_ceiling4_0x7c4d35b:
+    title: ' '
+    card:
+      type: custom:mushroom-light-card
+      entity: light.yeelight_ceiling4_0x7c4d35b
+      hide_state: false
+      fill_container: false
+      use_light_color: true
+      show_brightness_control: true
+      show_color_temp_control: true
+      show_color_control: false
+      collapsible_controls: false
+      layout: vertical
+  light.yeelight_ceiling4_0x7c4d35b_ambilight:
+    title: ' '
+    card:
+      type: custom:mushroom-light-card
+      entity: light.yeelight_ceiling4_0x7c4d35b_ambilight
+      hide_state: false
+      fill_container: false
+      use_light_color: true
+      show_brightness_control: true
+      show_color_temp_control: true
+      show_color_control: true
+      collapsible_controls: false
+      layout: vertical
+  light.yeelight_ceilb_0x1a5e8066:
+    title: ' '
+    card:
+      type: custom:mushroom-light-card
+      entity: light.yeelight_ceilb_0x1a5e8066
+      hide_state: false
+      fill_container: false
+      use_light_color: true
+      show_brightness_control: true
+      show_color_temp_control: true
+      show_color_control: false
+      collapsible_controls: false
+      layout: vertical
+  light.yeelight_ceilb_0x1a5e8066_ambilight:
+    title: ' '
+    card:
+      type: custom:mushroom-light-card
+      entity: light.yeelight_ceilb_0x1a5e8066_ambilight
+      hide_state: false
+      fill_container: false
+      use_light_color: true
+      show_brightness_control: true
+      show_color_temp_control: true
+      show_color_control: true
+      collapsible_controls: false
+      layout: vertical
+  switch.shu_fang_deng:
+    title: ' '
+    card:
+      type: horizontal-stack
+      cards:
+        - type: custom:mod-card
+          card:
+            type: custom:light-popup-card
+            entity: switch.0x54ef44100001154b_channel_2
+          card_mod:
+            style: |
+              ha-card {
+                height: 600px;
+              }
+        - type: custom:mod-card
+          card:
+            type: custom:light-popup-card
+            entity: switch.0x54ef44100001154b_channel_1
+          card_mod:
+            style: |
+              ha-card {
+                height: 600px;
+              }
+  switch.can_ting_deng:
+    title: ' '
+    card:
+      type: horizontal-stack
+      cards:
+        - type: custom:mod-card
+          card:
+            type: custom:light-popup-card
+            entity: switch.0x54ef441000011822_channel_1
+          card_mod:
+            style: |
+              ha-card {
+                height: 600px;
+              }
+        - type: custom:mod-card
+          card:
+            type: custom:light-popup-card
+            entity: switch.0x54ef441000011822_channel_2
+          card_mod:
+            style: |
+              ha-card {
+                height: 600px;
+              }
+  vacuum.1lou_sao_di_ji_jie_ren:
+    title: ' '
+    card:
+      type: custom:xiaomi-vacuum-map-card
+      map_source:
+        camera: camera.yi_lou_di_tu
+      calibration_source:
+        camera: true
+      entity: vacuum.1lou_sao_di_ji_jie_ren
+      vacuum_platform: default
+      map_locked: true
+  vacuum.er_lou_sao_di_ji_qi_ren:
+    title: ' '
+    card:
+      type: custom:xiaomi-vacuum-map-card
+      map_source:
+        camera: camera.er_lou_di_tu
+      calibration_source:
+        camera: true
+      entity: vacuum.er_lou_sao_di_ji_qi_ren
+      vacuum_platform: default
+      map_locked: true
+  vacuum.roborock_a29_8ea8_robot_cleaner:
+    title: ' '
+    card:
+      type: custom:xiaomi-vacuum-map-card
+      map_source:
+        camera: camera.yi_lou_di_tu_sao_tuo
+      calibration_source:
+        camera: true
+      entity: vacuum.roborock_a29_8ea8_robot_cleaner
+      vacuum_platform: default
+      map_locked: true
+  climate.ke_ting_leng_qi_ji:
+    title: 客廳空調
+    card:
+      type: vertical-stack
+      cards:
+        - type: thermostat
+          entity: climate.ke_ting_leng_qi_ji
+        - type: entities
+          entities:
+            - switch.ke_ting_leng_qi_ji_nanoe
+            - select.ke_ting_leng_qi_ji_dong_xiang_gan_ying
+            - switch.ke_ting_leng_qi_ji_shu_mian
+  climate.da_ke_fang_leng_qi_ji:
+    title: 大客房空調
+    card:
+      type: vertical-stack
+      cards:
+        - type: thermostat
+          entity: climate.da_ke_fang_leng_qi_ji
+        - type: entities
+          entities:
+            - switch.da_ke_fang_leng_qi_ji_nanoe
+            - select.da_ke_fang_leng_qi_ji_dong_xiang_gan_ying
+            - switch.da_ke_fang_leng_qi_ji_shu_mian
+  climate.zhu_wo_leng_qi_ji:
+    title: 主臥空調
+    card:
+      type: vertical-stack
+      cards:
+        - type: thermostat
+          entity: climate.zhu_wo_leng_qi_ji
+        - type: entities
+          entities:
+            - switch.zhu_wo_leng_qi_ji_nanoe
+            - select.zhu_wo_leng_qi_ji_dong_xiang_gan_ying
+            - switch.zhu_wo_leng_qi_ji_shu_mian
+  climate.can_ting_leng_qi_ji:
+    title: 餐廳空調
+    card:
+      type: vertical-stack
+      cards:
+        - type: thermostat
+          entity: climate.can_ting_leng_qi_ji
+        - type: entities
+          entities:
+            - switch.can_ting_leng_qi_ji_nanoe
+            - select.can_ting_leng_qi_ji_dong_xiang_gan_ying
+            - switch.can_ting_leng_qi_ji_shu_mian
+  climate.xiao_hai_fang_leng_qi_ji:
+    title: 兒童房空調
+    card:
+      type: vertical-stack
+      cards:
+        - type: thermostat
+          entity: climate.xiao_hai_fang_leng_qi_ji
+        - type: entities
+          entities:
+            - switch.xiao_hai_fang_leng_qi_ji_nanoe
+            - select.xiao_hai_fang_leng_qi_ji_dong_xiang_gan_ying
+            - switch.xiao_hai_fang_leng_qi_ji_shu_mian
+  climate.shu_fang_leng_qi_ji:
+    title: 書房空調
+    card:
+      type: vertical-stack
+      cards:
+        - type: thermostat
+          entity: climate.shu_fang_leng_qi_ji
+        - type: entities
+          entities:
+            - switch.shu_fang_leng_qi_ji_nanoe
+            - select.shu_fang_leng_qi_ji_dong_xiang_gan_ying
+            - switch.shu_fang_leng_qi_ji_shu_mian
+  climate.xiao_ke_fang_leng_qi_ji:
+    title: 小客房空調
+    card:
+      type: vertical-stack
+      cards:
+        - type: thermostat
+          entity: climate.xiao_ke_fang_leng_qi_ji
+        - type: entities
+          entities:
+            - switch.xiao_ke_fang_leng_qi_ji_ji_nanoe
+            - select.xiao_ke_fang_leng_qi_ji_dong_xiang_gan_ying
+            - switch.xiao_ke_fang_leng_qi_ji_shu_mian
+  climate.yu_jia_shi_leng_qi_ji:
+    title: 瑜伽室空調
+    card:
+      type: vertical-stack
+      cards:
+        - type: thermostat
+          entity: climate.yu_jia_shi_leng_qi_ji
+        - type: entities
+          entities:
+            - switch.yu_jia_shi_leng_qi_ji_nanoe
+            - select.yu_jia_shi_leng_qi_ji_dong_xiang_gan_ying
+            - switch.yu_jia_shi_leng_qi_ji_shu_mian
+  climate.jian_shen_fang_leng_qi_ji:
+    title: 健身房空調
+    card:
+      type: vertical-stack
+      cards:
+        - type: thermostat
+          entity: climate.jian_shen_fang_leng_qi_ji
+        - type: entities
+          entities:
+            - switch.jian_shen_fang_leng_qi_ji_nanoe
+            - select.jian_shen_fang_leng_qi_ji_dong_xiang_gan_ying
+            - switch.jian_shen_fang_leng_qi_ji_shu_mian
+  fan.study_fan:
+    title: ' '
+    card:
+      type: custom:mushroom-fan-card
+      entity: fan.study_fan
+      layout: vertical
+      show_percentage_control: true
+      fill_container: false
+      icon_animation: true
+  fan.xiao_hai_fang_dian_feng_shan:
+    title: ' '
+    card:
+      type: vertical-stack
+      cards:
+        - type: custom:mushroom-fan-card
+          entity: fan.xiao_hai_fang_dian_feng_shan
+          icon_animation: true
+          hide_state: false
+          show_oscillate_control: true
+          show_percentage_control: true
+          layout: vertical
+        - type: custom:mushroom-title-card
+          title: 角度
+          alignment: start
+        - type: horizontal-stack
+          cards:
+            - type: custom:button-card
+              entity: number.xiao_hai_fang_dian_feng_shan_oscillation_angle
+              name: 30°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 30
+                  entity_id: number.xiao_hai_fang_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.xiao_hai_fang_dian_feng_shan_oscillation_angle"].state
+                      == "30") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '140'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.xiao_hai_fang_dian_feng_shan_oscillation_angle
+              name: 60°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 60
+                  entity_id: number.xiao_hai_fang_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.xiao_hai_fang_dian_feng_shan_oscillation_angle"].state
+                      == "60") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '140'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.xiao_hai_fang_dian_feng_shan_oscillation_angle
+              name: 90°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 90
+                  entity_id: number.xiao_hai_fang_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.xiao_hai_fang_dian_feng_shan_oscillation_angle"].state
+                      == "90") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '140'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.xiao_hai_fang_dian_feng_shan_oscillation_angle
+              name: 120°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 120
+                  entity_id: number.xiao_hai_fang_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.xiao_hai_fang_dian_feng_shan_oscillation_angle"].state
+                      == "120") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '140'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.xiao_hai_fang_dian_feng_shan_oscillation_angle
+              name: 140°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 140
+                  entity_id: number.xiao_hai_fang_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.xiao_hai_fang_dian_feng_shan_oscillation_angle"].state
+                      == "140") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+        - type: custom:mushroom-title-card
+          title: 方向
+        - type: horizontal-stack
+          cards:
+            - type: custom:button-card
+              entity: fan.xiao_hai_fang_dian_feng_shan
+              icon: mdi:arrow-left-circle
+              name: 向左
+              tap_action:
+                action: call-service
+                service: fan.set_direction
+                service_data:
+                  direction: reverse
+                  entity_id: fan.xiao_hai_fang_dian_feng_shan
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: white
+            - type: custom:button-card
+              entity: fan.xiao_hai_fang_dian_feng_shan
+              icon: mdi:arrow-right-circle
+              name: 向右
+              tap_action:
+                action: call-service
+                service: fan.set_direction
+                service_data:
+                  direction: forward
+                  entity_id: fan.xiao_hai_fang_dian_feng_shan
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: white
+  fan.ke_ting_dian_feng_shan:
+    title: ' '
+    card:
+      type: vertical-stack
+      cards:
+        - type: custom:mushroom-fan-card
+          entity: fan.ke_ting_dian_feng_shan
+          icon_animation: true
+          hide_state: false
+          show_oscillate_control: true
+          show_percentage_control: true
+          layout: vertical
+        - type: custom:mushroom-title-card
+          title: 角度
+          alignment: start
+        - type: horizontal-stack
+          cards:
+            - type: custom:button-card
+              entity: number.ke_ting_dian_feng_shan_oscillation_angle
+              name: 30°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 30
+                  entity_id: number.ke_ting_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.ke_ting_dian_feng_shan_oscillation_angle"].state
+                      == "30") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '140'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.ke_ting_dian_feng_shan_oscillation_angle
+              name: 60°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 60
+                  entity_id: number.ke_ting_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.ke_ting_dian_feng_shan_oscillation_angle"].state
+                      == "60") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '140'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.ke_ting_dian_feng_shan_oscillation_angle
+              name: 90°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 90
+                  entity_id: number.ke_ting_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.ke_ting_dian_feng_shan_oscillation_angle"].state
+                      == "90") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '140'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.ke_ting_dian_feng_shan_oscillation_angle
+              name: 120°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 120
+                  entity_id: number.ke_ting_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.ke_ting_dian_feng_shan_oscillation_angle"].state
+                      == "120") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '140'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.ke_ting_dian_feng_shan_oscillation_angle
+              name: 140°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 140
+                  entity_id: number.ke_ting_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.ke_ting_dian_feng_shan_oscillation_angle"].state
+                      == "140") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+        - type: custom:mushroom-title-card
+          title: 方向
+        - type: horizontal-stack
+          cards:
+            - type: custom:button-card
+              entity: fan.ke_ting_dian_feng_shan
+              icon: mdi:arrow-left-circle
+              name: 向左
+              tap_action:
+                action: call-service
+                service: fan.set_direction
+                service_data:
+                  direction: reverse
+                  entity_id: fan.ke_ting_dian_feng_shan
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: white
+            - type: custom:button-card
+              entity: fan.ke_ting_dian_feng_shan
+              icon: mdi:arrow-right-circle
+              name: 向右
+              tap_action:
+                action: call-service
+                service: fan.set_direction
+                service_data:
+                  direction: forward
+                  entity_id: fan.ke_ting_dian_feng_shan
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: white
+  fan.zhu_wo_dian_feng_shan:
+    title: ' '
+    card:
+      type: vertical-stack
+      cards:
+        - type: custom:mushroom-fan-card
+          entity: fan.zhu_wo_dian_feng_shan
+          icon_animation: true
+          hide_state: false
+          show_oscillate_control: true
+          show_percentage_control: true
+          layout: vertical
+        - type: custom:mushroom-title-card
+          title: 角度
+          alignment: start
+        - type: horizontal-stack
+          cards:
+            - type: custom:button-card
+              entity: number.zhu_wo_dian_feng_shan_oscillation_angle
+              name: 30°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 30
+                  entity_id: number.zhu_wo_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 91px
+                  - height: 91px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.zhu_wo_dian_feng_shan_oscillation_angle"].state
+                      == "30") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.zhu_wo_dian_feng_shan_oscillation_angle
+              name: 60°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 60
+                  entity_id: number.zhu_wo_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 91px
+                  - height: 91px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.zhu_wo_dian_feng_shan_oscillation_angle"].state
+                      == "60") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.zhu_wo_dian_feng_shan_oscillation_angle
+              name: 90°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 90
+                  entity_id: number.zhu_wo_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 91px
+                  - height: 91px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.zhu_wo_dian_feng_shan_oscillation_angle"].state
+                      == "90") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.zhu_wo_dian_feng_shan_oscillation_angle
+              name: 120°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 120
+                  entity_id: number.zhu_wo_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 91px
+                  - height: 91px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.zhu_wo_dian_feng_shan_oscillation_angle"].state
+                      == "120") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+        - type: custom:mushroom-title-card
+          title: 方向
+        - type: horizontal-stack
+          cards:
+            - type: custom:button-card
+              entity: fan.zhu_wo_dian_feng_shan
+              icon: mdi:arrow-left-circle
+              name: 向左
+              tap_action:
+                action: call-service
+                service: fan.set_direction
+                service_data:
+                  direction: reverse
+                  entity_id: fan.zhu_wo_dian_feng_shan
+              styles:
+                card:
+                  - width: 91px
+                  - height: 91px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: white
+            - type: custom:button-card
+              entity: fan.zhu_wo_dian_feng_shan
+              icon: mdi:arrow-right-circle
+              name: 向右
+              tap_action:
+                action: call-service
+                service: fan.set_direction
+                service_data:
+                  direction: forward
+                  entity_id: fan.zhu_wo_dian_feng_shan
+              styles:
+                card:
+                  - width: 91px
+                  - height: 91px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: white
+  fan.da_ke_fang_dian_feng_shan:
+    title: ' '
+    card:
+      type: vertical-stack
+      cards:
+        - type: custom:mushroom-fan-card
+          entity: fan.da_ke_fang_dian_feng_shan
+          icon_animation: true
+          hide_state: false
+          show_oscillate_control: true
+          show_percentage_control: true
+          layout: vertical
+        - type: custom:mushroom-title-card
+          title: 角度
+          alignment: start
+        - type: horizontal-stack
+          cards:
+            - type: custom:button-card
+              entity: number.da_ke_fang_dian_feng_shan_oscillation_angle
+              name: 30°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 30
+                  entity_id: number.da_ke_fang_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.da_ke_fang_dian_feng_shan_oscillation_angle"].state
+                      == "30") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '140'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.da_ke_fang_dian_feng_shan_oscillation_angle
+              name: 60°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 60
+                  entity_id: number.da_ke_fang_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.da_ke_fang_dian_feng_shan_oscillation_angle"].state
+                      == "60") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '140'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.da_ke_fang_dian_feng_shan_oscillation_angle
+              name: 90°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 90
+                  entity_id: number.da_ke_fang_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.da_ke_fang_dian_feng_shan_oscillation_angle"].state
+                      == "90") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '140'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.da_ke_fang_dian_feng_shan_oscillation_angle
+              name: 120°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 120
+                  entity_id: number.da_ke_fang_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.da_ke_fang_dian_feng_shan_oscillation_angle"].state
+                      == "120") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '140'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+            - type: custom:button-card
+              entity: number.da_ke_fang_dian_feng_shan_oscillation_angle
+              name: 140°
+              tap_action:
+                action: call-service
+                service: number.set_value
+                service_data:
+                  value: 140
+                  entity_id: number.da_ke_fang_dian_feng_shan_oscillation_angle
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: >-
+                      [[[ if
+                      (states["number.da_ke_fang_dian_feng_shan_oscillation_angle"].state
+                      == "140") return "yellow"; else return 'white'; ]]]
+              state:
+                - value: '60'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '90'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '120'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+                - value: '30'
+                  styles:
+                    card:
+                      - filter: opacity(50%)
+        - type: custom:mushroom-title-card
+          title: 方向
+        - type: horizontal-stack
+          cards:
+            - type: custom:button-card
+              entity: fan.da_ke_fang_dian_feng_shan
+              icon: mdi:arrow-left-circle
+              name: 向左
+              tap_action:
+                action: call-service
+                service: fan.set_direction
+                service_data:
+                  direction: reverse
+                  entity_id: fan.da_ke_fang_dian_feng_shan
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: white
+            - type: custom:button-card
+              entity: fan.da_ke_fang_dian_feng_shan
+              icon: mdi:arrow-right-circle
+              name: 向右
+              tap_action:
+                action: call-service
+                service: fan.set_direction
+                service_data:
+                  direction: forward
+                  entity_id: fan.da_ke_fang_dian_feng_shan
+              styles:
+                card:
+                  - width: 70px
+                  - height: 70px
+                grid:
+                  - grid-template-areas: '"i" "n" "s"'
+                  - grid-template-columns: 1fr
+                  - grid-template-rows: 1fr min-content min-content
+                img_cell:
+                  - align-self: start
+                  - text-align: start
+                name:
+                  - justify-self: center
+                  - padding-left: 10px
+                  - font-weight: bold
+                  - text-transform: lowercase
+                state:
+                  - justify-self: start
+                  - padding-left: 10px
+                icon:
+                  - color: white
+  fan.kong_qi_jing_hua_qi:
+    title: ' '
+    card:
+      type: custom:switch-popup-card
+      noActiveState: '-'
+      icon: mdi:air-filter
+      entity_value_path: attributes.preset_modes
+      service: fan.set_preset_mode
+      service_data:
+        entity_id: this
+        preset_mode: value
+      entities:
+        - fan.kong_qi_jing_hua_qi
+      buttons:
+        - icon: mdi:air-filter
+          value: Auto
+          name: 自動
+          color: '#FFF'
+          icon_color: rgba(255,255,255,1)
+        - icon: mdi:air-filter
+          value: Silent
+          name: 靜音
+          color: '#FFF'
+          icon_color: rgba(255,255,255,1)
+        - icon: mdi:air-filter
+          value: Favorite
+          name: 最愛
+          color: '#FFF'
+          icon_color: rgba(255,255,255,1)
+        - icon: mdi:air-filter
+          value: Idle
+          name: 閒置
+          color: '#FFF'
+          icon_color: rgba(255,255,255,1)
+views:
+  - theme: ios-dark-mode-blue-red
+    title: PChome
+    path: iphone
+    icon: mdi:home-account
+    type: custom:grid-layout
+    layout:
+      width: 100%
+    badges: []
+    cards:
+      - show_current: true
+        show_forecast: true
+        type: weather-forecast
+        entity: weather.pchome
+        theme: ios-dark-mode-blue-red
+      - type: custom:homekit-card
+        home: false
+        style: |
+          :host {
+            --tile-background: rgba(255, 255, 255, 0.8);
+            --tile-border-radius: 12px;
+            --tile-width: 100px;
+            --tile-height: 100px;
+            --tile-on-background: rgba(255, 255, 255, 1);
+            
+            --tile-name-text-color: rgba(0, 0, 0, 0.4);
+            --tile-on-name-text-color: rgba(0, 0, 0, 1);
+            
+            --tile-state-text-color: rgba(0, 0, 0, 0.4);
+            --tile-state-text-font: 18px;
+            --tile-on-state-text-color: rgba(0, 0, 0, 1);
+            --tile-state-changed-text-color: rgb(134, 134, 134);
+            --tile-unavailable-state-text-color: rgba(255, 0, 0, 1);
+            
+            --tile-value-text-color: rgba(255, 0, 0, 1);
+            
+            
+            --tile-icon-color: rgba(0, 0, 0, 0.3);
+            --tile-on-icon-color: #f7d959;  
+            
+            --tile-width-mobile: 79px;
+            --tile-height-mobile: 90px;
+            --tile-icon-size: 30px;
+            --tile-image-radius: 100%
+            --slider-width: 420px;
+            --slider-height: 120px;
+          }
+        useBrightness: false
+        useTemperature: false
+        useRGB: true
+        titleColor: '#FFF'
+        enableColumns: true
+        statePositionTop: true
+        haptic: heavy
+        tileHoldAnimation: true
+        rows:
+          - row: 1
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 大門
+                    haptic: heavy
+                    entities:
+                      - entity: switch.sonoff_100086aef5_1
+                        name: 開大門
+                        icon: mdi:door
+                        tap_action:
+                          action: toggle
+                          entity: switch.sonoff_100086aef5_1
+                      - entity: switch.sonoff_100086aef5_2
+                        name: 關大門
+                        icon: mdi:door-closed
+                        tap_action:
+                          action: toggle
+                          entity: switch.sonoff_100086aef5_2
+          - row: 2
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 燈光
+                    haptic: heavy
+                    entities:
+                      - entity: switch.0x54ef44100001154b_channel_3
+                        name: 客廳
+                        icon: mdi:sofa-outline
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x54ef44100001154b_channel_3
+                        hold_action:
+                          action: popup
+                      - entity: switch.shu_fang_deng
+                        name: 書房
+                        icon: phu:imac
+                        hold_action:
+                          action: popup
+                      - entity: light.yeelight_ceilb_0x1a5e8066
+                        name: 小孩房
+                        icon: mdi:teddy-bear
+                        tap_action:
+                          action: toggle
+                          entity: light.yeelight_ceilb_0x1a5e8066
+                      - entity: light.yeelight_ceiling4_0x7c4d35b
+                        icon: mdi:bed
+                        name: 主臥
+                        tap_action:
+                          action: toggle
+                          entity: light.yeelight_ceiling4_0x7c4d35b
+                      - entity: switch.can_ting_deng
+                        name: 餐廳
+                        icon: mdi:silverware
+                        hold_action:
+                          action: popup
+                      - entity: switch.0x54ef441000011822_channel_3
+                        name: 廚房
+                        icon: mdi:countertop-outline
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x54ef441000011822_channel_3
+                      - entity: switch.0x54ef4410001813c9_channel_2
+                        name: 客廳浴室
+                        icon: mdi:toilet
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x54ef4410001813c9_channel_2
+                      - entity: switch.0x54ef44100017f7b1_channel_1
+                        name: 主臥浴室
+                        icon: mdi:toilet
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x54ef44100017f7b1_channel_1
+                      - entity: switch.0x158d00054caee7_channel_2
+                        name: 小客房
+                        icon: mdi:bed
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x158d00054caee7_channel_2
+                      - entity: switch.0x54ef4410000f1fae_switch
+                        name: 健身房
+                        icon: mdi:weight-lifter
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x54ef4410000f1fae_switch
+          - row: 3
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 窗簾
+                    haptic: heavy
+                    entities:
+                      - entity: cover.0x158d00079813f6_motor
+                        tap_action:
+                          action: popup
+                      - entity: cover.ke_ting_juan_lian
+                        icon: mdi:blinds
+                        tap_action:
+                          action: popup
+                      - entity: cover.lumi_hmcn02_35c3_curtain
+                        icon: mdi:curtains
+                        tap_action:
+                          action: popup
+          - row: 4
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 電扇
+                    haptic: heavy
+                    entities:
+                      - entity: fan.ke_ting_dian_feng_shan
+                        name: 客廳
+                        icon: mdi:sofa-outline
+                        tap_action:
+                          action: toggle
+                          entity: fan.ke_ting_dian_feng_shan
+                        hold_action:
+                          action: popup
+                      - entity: fan.study_fan
+                        name: 書房
+                        icon: phu:imac
+                        tap_action:
+                          action: toggle
+                          entity: fan.study_fan
+                        hold_action:
+                          action: popup
+                      - entity: fan.xiao_hai_fang_dian_feng_shan
+                        name: 小孩房
+                        icon: mdi:teddy-bear
+                        tap_action:
+                          action: toggle
+                          entity: fan.xiao_hai_fang_dian_feng_shan
+                        hold_action:
+                          action: popup
+                      - entity: fan.zhu_wo_dian_feng_shan
+                        icon: mdi:bed
+                        name: 主臥
+                        tap_action:
+                          action: toggle
+                          entity: fan.zhu_wo_dian_feng_shan
+                        hold_action:
+                          action: popup
+                      - entity: fan.da_ke_fang_dian_feng_shan
+                        name: 大客房
+                        icon: mdi:bed
+                        tap_action:
+                          action: toggle
+                          entity: fan.da_ke_fang_dian_feng_shan
+                        hold_action:
+                          action: popup
+          - row: 4
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 冷氣
+                    haptic: heavy
+                    entities:
+                      - entity: climate.ke_ting_leng_qi_ji
+                        icon: mdi:sofa-outline
+                        tap_action:
+                          action: popup
+                      - entity: climate.zhu_wo_leng_qi_ji
+                        icon: mdi:air-conditioner
+                        tap_action:
+                          action: popup
+                      - entity: climate.shu_fang_leng_qi_ji
+                        icon: mdi:air-conditioner
+                        tap_action:
+                          action: popup
+                      - entity: climate.xiao_hai_fang_leng_qi_ji
+                        icon: mdi:air-conditioner
+                        tap_action:
+                          action: popup
+                      - entity: climate.can_ting_leng_qi_ji
+                        icon: mdi:air-conditioner
+                        tap_action:
+                          action: popup
+                      - entity: climate.da_ke_fang_leng_qi_ji
+                        icon: mdi:air-conditioner
+                        tap_action:
+                          action: popup
+                      - entity: climate.xiao_ke_fang_leng_qi_ji
+                        icon: mdi:air-conditioner
+                        tap_action:
+                          action: popup
+                      - entity: climate.jian_shen_fang_leng_qi_ji
+                        icon: mdi:air-conditioner
+                        tap_action:
+                          action: popup
+  - theme: ios-dark-mode-blue-red
+    title: 一樓
+    path: ''
+    type: panel
+    icon: mdi:home-floor-1
+    badges: []
+    cards:
+      - type: custom:homekit-card
+        home: false
+        style: |
+          :host {
+            --tile-background: rgba(255, 255, 255, 0.8);
+            --tile-border-radius: 12px;
+            --tile-width: 100px;
+            --tile-height: 100px;
+            --tile-on-background: rgba(255, 255, 255, 1);
+            
+            --tile-name-text-color: rgba(0, 0, 0, 0.4);
+            --tile-on-name-text-color: rgba(0, 0, 0, 1);
+            
+            --tile-state-text-color: rgba(0, 0, 0, 0.4);
+            --tile-on-state-text-color: rgba(0, 0, 0, 1);
+            --tile-state-changed-text-color: rgb(134, 134, 134);
+            --tile-unavailable-state-text-color: rgba(255, 0, 0, 1);
+            
+            --tile-value-text-color: rgba(255, 0, 0, 1);
+            
+            
+            --tile-icon-color: rgba(0, 0, 0, 0.3);
+            --tile-on-icon-color: #f7d959;  
+            
+            --tile-width-mobile: 79px;
+            --tile-height-mobile: 90px;
+            --tile-icon-size: 30px;
+            --tile-image-radius: 100%
+            --slider-width: 420px;
+            --slider-height: 120px;
+          }
+        useBrightness: false
+        useTemperature: false
+        useRGB: true
+        titleColor: '#FFF'
+        enableColumns: true
+        statePositionTop: true
+        haptic: heavy
+        tileHoldAnimation: true
+        rows:
+          - row: 1
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 客廳
+                    haptic: heavy
+                    entities:
+                      - entity: switch.0x54ef44100001154b_channel_3
+                        name: 客廳燈
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x54ef44100001154b_channel_3
+                        hold_action:
+                          action: popup
+                      - entity: climate.ke_ting_leng_qi_ji
+                        tap_action:
+                          action: popup
+                      - entity: vacuum.roborock_a29_8ea8_robot_cleaner
+                        offStates: docked
+                        spin: true
+                        tap_action:
+                          action: call-service
+                          service: script.1f_rock_vacuum_onoff
+                        hold_action:
+                          action: popup
+                      - entity: fan.ke_ting_dian_feng_shan
+                        spin: true
+                        tap_action:
+                          action: toggle
+                          entity: fan.ke_ting_dian_feng_shan
+                        hold_action:
+                          action: popup
+                      - entity: fan.kong_qi_jing_hua_qi
+                        icon: mdi:air-filter
+                        tap_action:
+                          action: toggle
+                          entity: fan.kong_qi_jing_hua_qi
+                        hold_action:
+                          action: popup
+                      - entity: cover.0x158d00079813f6_motor
+                        tap_action:
+                          action: popup
+                      - entity: cover.ke_ting_juan_lian
+                        icon: mdi:blinds
+                        tap_action:
+                          action: popup
+                      - entity: media_player.ke_ting_2
+                        tap_action:
+                          action: popup
+          - row: 2
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 主臥
+                    haptic: heavy
+                    entities:
+                      - entity: light.yeelight_ceiling4_0x7c4d35b
+                        icon: phu:ceiling-fair
+                        tap_action:
+                          action: toggle
+                          entity: light.yeelight_ceiling4_0x7c4d35b
+                      - entity: light.yeelight_ceiling4_0x7c4d35b_ambilight
+                        icon: phu:ceiling-round
+                        tap_action:
+                          action: toggle
+                          entity: light.yeelight_ceiling4_0x7c4d35b_ambilight
+                      - entity: climate.zhu_wo_leng_qi_ji
+                        icon: mdi:air-conditioner
+                        tap_action:
+                          action: popup
+                      - entity: fan.zhu_wo_dian_feng_shan
+                        spin: true
+                        tap_action:
+                          action: toggle
+                          entity: fan.zhu_wo_dian_feng_shan
+                        hold_action:
+                          action: popup
+                      - entity: switch.0x54ef44100018235f_channel_1
+                        hold_action:
+                          action: popup
+                      - entity: switch.0x54ef44100018235f_channel_2
+                        hold_action:
+                          action: popup
+                      - entity: media_player.zhu_wo
+                        tap_action:
+                          action: popup
+          - row: 3
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 書房
+                    entities:
+                      - entity: switch.shu_fang_deng
+                        name: 書房燈
+                        hold_action:
+                          action: popup
+                      - entity: climate.shu_fang_leng_qi_ji
+                        icon: mdi:air-conditioner
+                        tap_action:
+                          action: popup
+                      - entity: fan.study_fan
+                        spin: true
+                        icon: mdi:fan
+                        tap_action:
+                          action: more-info
+                          entity: fan.study_fan
+                      - entity: cover.lumi_hmcn02_35c3_curtain
+                        icon: mdi:curtains
+                        tap_action:
+                          action: popup
+          - row: 4
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 小孩房
+                    entities:
+                      - entity: light.yeelight_ceilb_0x1a5e8066
+                        icon: phu:ceiling-fair
+                        tap_action:
+                          action: toggle
+                          entity: light.yeelight_ceilb_0x1a5e8066
+                      - entity: light.yeelight_ceilb_0x1a5e8066_ambilight
+                        icon: phu:ceiling-round
+                        tap_action:
+                          action: toggle
+                          entity: light.yeelight_ceilb_0x1a5e8066_ambilight
+                      - entity: climate.xiao_hai_fang_leng_qi_ji
+                        icon: mdi:air-conditioner
+                        tap_action:
+                          action: popup
+                      - entity: fan.xiao_hai_fang_dian_feng_shan
+                        tap_action:
+                          action: toggle
+                          entity: fan.xiao_hai_fang_dian_feng_shan
+                        hold_action:
+                          action: popup
+          - row: 5
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 餐廳
+                    entities:
+                      - entity: switch.can_ting_deng
+                        hold_action:
+                          action: popup
+                      - entity: switch.0x54ef441000011822_channel_3
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x54ef441000011822_channel_3
+                      - entity: climate.can_ting_leng_qi_ji
+                        icon: mdi:air-conditioner
+                        tap_action:
+                          action: popup
+                      - entity: media_player.can_ting
+                        tap_action:
+                          action: popup
+                      - entity: switch.sonoff_10015da991
+                        icon: cil:dishwasher-silverware
+                        tap_action:
+                          action: toggle
+                          entity: switch.sonoff_10015da991
+                      - entity: switch.sonoff_10015d9288
+                        icon: mdi:washing-machine
+                        tap_action:
+                          action: toggle
+                          entity: switch.sonoff_10015d9288
+          - row: 6
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 浴室
+                    entities:
+                      - entity: switch.0x54ef4410001813c9_channel_2
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x54ef4410001813c9_channel_2
+                      - entity: switch.0x54ef4410001813c9_channel_1
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x54ef4410001813c9_channel_1
+                      - entity: switch.0x54ef44100017f7b1_channel_1
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x54ef44100017f7b1_channel_1
+                      - entity: switch.0x54ef44100017f7b1_channel_2
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x54ef44100017f7b1_channel_2
+  - theme: ios-dark-mode-blue-red
+    title: 二樓
+    path: ''
+    type: panel
+    icon: mdi:home-floor-2
+    badges: []
+    cards:
+      - type: custom:homekit-card
+        home: false
+        style: |
+          :host {
+            --tile-background: rgba(255, 255, 255, 0.8);
+            --tile-border-radius: 12px;
+            --tile-width: 100px;
+            --tile-height: 100px;
+            --tile-on-background: rgba(255, 255, 255, 1);
+            
+            --tile-name-text-color: rgba(0, 0, 0, 0.4);
+            --tile-on-name-text-color: rgba(0, 0, 0, 1);
+            
+            --tile-state-text-color: rgba(0, 0, 0, 0.4);
+            --tile-on-state-text-color: rgba(0, 0, 0, 1);
+            --tile-state-changed-text-color: rgb(134, 134, 134);
+            --tile-unavailable-state-text-color: rgba(255, 0, 0, 1);
+            
+            --tile-value-text-color: rgba(255, 0, 0, 1);
+            
+            
+            --tile-icon-color: rgba(0, 0, 0, 0.3);
+            --tile-on-icon-color: #f7d959;  
+            
+            --tile-width-mobile: 79px;
+            --tile-height-mobile: 90px;
+            --tile-icon-size: 30px;
+            --tile-image-radius: 100%
+            --slider-width: 420px;
+            --slider-height: 120px;
+          }
+        useBrightness: false
+        useTemperature: false
+        useRGB: true
+        titleColor: '#FFF'
+        enableColumns: true
+        statePositionTop: true
+        haptic: heavy
+        tileHoldAnimation: true
+        rows:
+          - row: 1
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 大客房
+                    entities:
+                      - entity: climate.da_ke_fang_leng_qi_ji
+                        icon: mdi:air-conditioner
+                        tap_action:
+                          action: popup
+                      - entity: fan.da_ke_fang_dian_feng_shan
+                        spin: true
+                        tap_action:
+                          action: toggle
+                          entity: fan.da_ke_fang_dian_feng_shan
+                        hold_action:
+                          action: popup
+          - row: 2
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 小客房
+                    entities:
+                      - entity: switch.0x158d00054caee7_channel_2
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x158d00054caee7_channel_2
+                      - entity: climate.xiao_ke_fang_leng_qi_ji
+                        icon: mdi:air-conditioner
+                        tap_action:
+                          action: popup
+                      - entity: switch.0x158d00054caee7_channel_1
+                        icon: mdi:globe-light
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x158d00054caee7_channel_1
+          - row: 3
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 健身房
+                    entities:
+                      - entity: switch.0x54ef4410000f1fae_switch
+                        tap_action:
+                          action: toggle
+                          entity: switch.0x54ef4410000f1fae_switch
+                      - entity: climate.jian_shen_fang_leng_qi_ji
+                        icon: mdi:air-conditioner
+                        tap_action:
+                          action: popup
+          - row: 4
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 二樓走廊
+                    entities:
+                      - entity: vacuum.er_lou_sao_di_ji_qi_ren
+                        offStates: docked
+                        spin: true
+                        tap_action:
+                          action: call-service
+                          service: script.2f_vacuum_onoff
+                        hold_action:
+                          action: popup
+  - theme: ios-dark-mode-blue-red
+    icon: mdi:home-thermometer
+    path: sensor
+    type: panel
+    badges: []
+    cards:
+      - type: custom:homekit-card
+        home: false
+        style: |
+          :host {
+            --tile-background: rgba(255, 255, 255, 0.8);
+            --tile-border-radius: 12px;
+            --tile-width: 100px;
+            --tile-height: 100px;
+            --tile-on-background: rgba(255, 255, 255, 1);
+            
+            --tile-name-text-color: rgba(0, 0, 0, 0.4);
+            --tile-on-name-text-color: rgba(0, 0, 0, 1);
+            
+            --tile-state-text-color: rgba(0, 0, 0, 0.4);
+            --tile-on-state-text-color: rgba(0, 0, 0, 1);
+            --tile-state-changed-text-color: rgb(134, 134, 134);
+            --tile-unavailable-state-text-color: rgba(255, 0, 0, 1);
+            
+            --tile-value-text-color: rgba(255, 0, 0, 1);
+            
+            
+            --tile-icon-color: rgba(0, 0, 0, 0.3);
+            --tile-on-icon-color: #f7d959;  
+            
+            --tile-width-mobile: 79px;
+            --tile-height-mobile: 90px;
+            --tile-icon-size: 30px;
+            --tile-image-radius: 100%
+            --slider-width: 420px;
+            --slider-height: 120px;
+          }
+        useBrightness: false
+        useTemperature: false
+        useRGB: true
+        titleColor: '#FFF'
+        enableColumns: true
+        statePositionTop: true
+        haptic: heavy
+        tileHoldAnimation: true
+        rows:
+          - row: 1
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 客廳
+                    haptic: heavy
+                    entities:
+                      - card: custom:mini-graph-card
+                        cardOptions:
+                          entities:
+                            - sensor.kong_qi_jing_hua_qi_temperature
+                          name: 溫度
+                      - card: custom:mini-graph-card
+                        cardOptions:
+                          entities:
+                            - sensor.kong_qi_jing_hua_qi_humidity
+                          name: 濕度
+                          line_color: blue
+                      - entity: binary_sensor.0x54ef441000472e25_occupancy
+                        name: 人體傳感器
+                      - entity: sensor.0x54ef44100008a694_illuminance
+                        name: 亮度
+          - row: 2
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 主臥
+                    haptic: heavy
+                    entities:
+                      - card: custom:mini-graph-card
+                        cardOptions:
+                          entities:
+                            - sensor.0x158d0002159000_temperature
+                          name: 溫度
+                      - card: custom:mini-graph-card
+                        cardOptions:
+                          entities:
+                            - sensor.0x158d0002159000_humidity
+                          name: 濕度
+                          line_color: blue
+                      - entity: binary_sensor.0x54ef441000471a6d_occupancy
+                        name: 人體傳感器
+                      - entity: binary_sensor.0x158d00022b6000_motion
+                        name: 床下人體傳感器
+          - row: 3
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 書房
+                    entities:
+                      - card: custom:mini-graph-card
+                        cardOptions:
+                          entities:
+                            - sensor.0x158d000227dfac_temperature
+                          name: 溫度
+                      - card: custom:mini-graph-card
+                        cardOptions:
+                          entities:
+                            - sensor.0x158d000227dfac_humidity
+                          name: 濕度
+                          line_color: blue
+                      - entity: binary_sensor.0x54ef44100047332c_occupancy
+                        name: 人體傳感器
+          - row: 4
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 小孩房
+                    entities:
+                      - card: custom:mini-graph-card
+                        cardOptions:
+                          entities:
+                            - sensor.0x158d0002158f23_temperature
+                          name: 溫度
+                      - card: custom:mini-graph-card
+                        cardOptions:
+                          entities:
+                            - sensor.0x158d0002158f23_humidity
+                          name: 濕度
+                          line_color: blue
+                      - entity: binary_sensor.0x54ef4410004d960b_occupancy
+                        name: 人體傳感器
+          - row: 5
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 餐廳
+                    entities:
+                      - card: custom:mini-graph-card
+                        cardOptions:
+                          entities:
+                            - sensor.zm1_b0f893291de6_temperature
+                          name: 溫度
+                      - card: custom:mini-graph-card
+                        cardOptions:
+                          entities:
+                            - sensor.zm1_b0f893291de6_humidity
+                          name: 濕度
+                          line_color: blue
+                      - entity: binary_sensor.0x54ef4410004719fa_occupancy
+                        name: 人體傳感器
+                      - entity: sensor.0x54ef441000089c91_illuminance
+                        name: 亮度
+          - row: 6
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 浴室
+                    entities:
+                      - entity: binary_sensor.0x54ef4410004d96dd_occupancy
+                        name: 客廳浴室人體傳感器
+                      - entity: binary_sensor.0x54ef4410004d96ac_occupancy
+                        name: 主臥浴室人體傳感器
+          - row: 7
+            columns:
+              - column: 1
+                tileOnRow: 7
+                entities:
+                  - title: 二樓走廊
+                    entities:
+                      - entity: sensor.0x54ef441000087d8b_illuminance
+                        name: 亮度
